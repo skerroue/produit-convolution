@@ -1,0 +1,216 @@
+/* GENERAL */
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f6f6;
+}
+a{
+    text-decoration: none;
+    color:#7952b3!important;
+}
+a:hover{
+    text-decoration: underline;
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+mjx-container{
+    overflow-x: auto;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+}
+#logo{
+    width: 80px;
+    cursor: pointer!important;
+}
+
+/* LANGUAGE */
+#language{
+    width: 50px;
+    height: 48px;
+    font-size: 20px;
+    position: absolute;
+    left:30px;
+    top:30px;
+    color:#7952b3;
+    cursor: pointer;
+}
+#language:hover{
+    opacity: 0.7;
+}
+#language p{
+    position: relative;
+    top:7px;
+}
+
+/** THEME **/
+#theme{
+    width: 50px;
+    height: 48px;
+    font-size: 20px;
+    position: absolute;
+    left:30px;
+    top:30px;
+    color:#7952b3;
+    cursor: pointer;
+}
+#theme:hover{
+    opacity: 0.7;
+}
+#theme p{
+    position: relative;
+    top:7px;
+}
+
+/** INTRODUCTION **/
+#text-introduction{
+    text-align: justify!important;
+}
+
+/* EXAMPLES */
+.btn-example{
+    background-color: #7952b3;
+    color:white!important;
+    cursor: not-allowed!important;
+}
+.btn-example-outline{
+    background-color: transparent;
+    border-color:#7952b3;
+    color:#7952b3;
+}
+.btn-example-outline:hover{
+    color:white;
+    background-color:#7952b3;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+#navigation-container{
+    margin-top: 100px;
+}
+
+/** SUBJECT **/
+.collapse-text{
+    position: relative;
+    left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight: 700;
+    text-decoration: none!important;
+}
+.collapse-text:hover{
+    opacity: 0.7;
+}
+.card-collapse{
+    background-color: #f8f8f8;
+}
+#text-subject-details .MathJax{
+    text-align: left!important;
+}
+
+/** CHARTS **/
+.switch-charts{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:#7952b3;
+    color:white;
+    cursor: pointer;
+}
+.switch-charts p{
+    position: relative;
+    left:-1px;
+    top:2px;
+}
+.switch-charts-outline p{
+    position: relative;
+    left:-3px;
+}
+.switch-charts-outline{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border:2px solid #7952b3;
+    background-color:transparent;
+    color:#7952b3;
+    cursor: pointer;
+}
+.switch-charts-outline:hover{
+    color:white;
+    background-color:#7952b3;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.switch-charts-separation{
+    height: 2px;
+    width: 30px;
+    background-color: #7952b3;
+    position: relative;
+    top:22px;
+}
+#chart-img{
+    max-width: 100%;
+}
+
+/** INDICATION **/
+#indication{
+    background-color: #ecdef8;
+    border-radius: 5px;
+    border:1px solid #7952b3;
+    position: relative;
+}
+#indication-information{
+    position: absolute;
+    background-color:#7952b3;
+    font-size: 24px;
+    color:white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    left:-25px;
+    top:-25px;
+}
+#indication-information i {
+    position: relative;
+    top:7px;
+}
+
+/** RESPONSE **/
+#text-response{
+    text-align: justify!important;
+}
+.pre .MathJax{
+    background-color:#f8f8f8!important;
+    border-radius: 5px!important;
+    padding-top:10px!important;
+    padding-bottom: 10px!important;
+}
+
+/** INTRODUCTION IMG **/
+#introduction-img{
+    max-width: 100%;
+}
+
+/** DARK THEME **/
+#dark-theme{
+    background-color: #1c1f26 !important;
+}
+#dark-theme p{
+    color:#adbac7!important;
+}
+#dark-theme .card{
+    background-color:#22272e!important;
+    border-color: #444c56!important;
+}
+#dark-theme button, #dark-theme #indication-information i{
+    color:#adbac7!important;
+}
+#dark-theme .card-collapse{
+    background-color: #1c1f26 !important;
+}
+#dark-theme #indication{
+    background-color: #282232;
+}
+#dark-theme .pre .MathJax{
+    background-color: #1c1f26 !important;
+}

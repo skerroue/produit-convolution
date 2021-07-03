@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- Custom font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Produit de convolution</title>
+</head>
+<body>
+    <!-- Top -->
+        <!--<div id="language" class="card shadow-sm text-center">
+            <p id="text-language"></p>
+        </div>-->
+        <!--<div id="theme" class="card shadow-sm text-center">
+            <p id="text-theme"><i class="fas fa-moon"></i></p>
+        </div>-->
+
+    <!-- Examples -->
+    <div class="container" id="navigation-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-11 card shadow-sm p-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 mb-lg-0 mb-3 text-center">
+                        <button class="btn col-12 btn-example" id="btn-introduction"></button>
+                    </div>
+                    <div class="col-lg-3 mb-lg-0 mb-3 text-center">
+                        <button class="btn col-12 btn-example-outline" id="btn-example-1" data-id="1"></button>
+                    </div>
+                    <div class="col-lg-3 mb-lg-0 mb-3 text-center">
+                        <button class="btn col-12 btn-example-outline" id="btn-example-2" data-id="2"></button>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <button class="btn col-12 btn-example-outline" id="btn-example-3" data-id="3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction zone -->
+    <div class="container mt-4" id="introduction-container">
+        <div class="row justify-content-center">
+            <div class="col-11 card shadow-sm p-3">
+                <div class="row justify-content-center">
+                    <div class="col-12 p-4">
+                        <p id="text-introduction" class="text-justify mb-5"></p>
+                        <img src="img/introduction.gif" class="rounded mx-auto d-block mt-5" id="introduction-img">
+                        <p class="text-center mt-3"><small>Convolution d'une fonction porte par elle-même. <a href="https://fr.wikipedia.org/wiki/Produit_de_convolution" target="_blank" >Wikipédia</a></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example zone -->
+    <div class="container mt-4" id="example-container" style="display: none;">
+        <div class="row justify-content-center">
+            <div class="col-11 card shadow-sm p-2">
+                <div class="row justify-content-center mb-3">
+                    <!-- Subject -->
+                    <div class="col-12 p-4">
+                        <a data-bs-toggle="collapse" href="#collapse-subject-1" role="button" aria-expanded="false" aria-controls="collapse-subject-1" class="collapse-text" id="text-subject"></a>
+                        <div class="collapse show mt-3" id="collapse-subject-1">
+                            <div class="card card-body card-collapse">
+                                <p id="text-subject-details"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Charts -->
+                    <div class="col-lg-6 p-4" id="chart-container">
+                        <!-- Chart -->
+                        <img src=""  class="rounded mx-auto d-block mt-5" id="chart-img">
+                        <!-- Switch -->
+                        <div class="row justify-content-center mt-3">
+                            <div class="step-button switch-charts m-2" data-step="1" data-show="1"><p class="text-center">1</p></div>
+                            <div class="switch-charts-separation" data-show="2"></div>
+                            <div class="step-button switch-charts-outline m-2" data-step="2" data-show="2"><p class="text-center">2</p></div>
+                            <div class="switch-charts-separation" data-show="3"></div>
+                            <div class="step-button switch-charts-outline m-2" data-step="3" data-show="3"><p class="text-center">3</p></div>
+                            <div class="switch-charts-separation" data-show="4"></div>
+                            <div class="step-button switch-charts-outline m-2" data-step="4" data-show="4"><p class="text-center">4</p></div>
+                            <div class="switch-charts-separation" data-show="5"></div>
+                            <div class="step-button switch-charts-outline m-2" data-step="5" data-show="5"><p class="text-center">5</p></div>
+                            <div class="switch-charts-separation" data-show="6"></div>
+                            <div class="step-button switch-charts-outline m-2" data-step="6" data-show="6"><p class="text-center">6</p></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4" id="response-container">
+                        <!-- Indication -->
+                        <div class="col-12" id="indication"><div id="indication-information" class="text-center d-none d-lg-block"><i class="fas fa-info"></i></div><p class="p-3 mt-2" id="text-indication"></p></div>
+                        <!-- Response -->
+                        <div class="col-12"><p class="p-3 text-justify" id="text-response"></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container mt-3">
+        <div class="row">
+            <p class="text-center" id="text-footer"></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- Jquery JS -->
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js" integrity="sha512-BqNYFBAzGfZDnIWSAEGZSD/QFKeVxms2dIBPfw11gZubWwKUjEgmFUtUls8vZ6xTRZN/jaXGHD/ZaxD9+fDo0A==" crossorigin="anonymous"></script>
+    <!-- Fontawesome JS -->
+    <script src="https://kit.fontawesome.com/227c0989cb.js" crossorigin="anonymous"></script>
+    <!-- Mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Texts -->
+    <script src="js/texts.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
